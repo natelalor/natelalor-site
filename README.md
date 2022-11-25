@@ -1,3 +1,7 @@
-## Summary
-This is a repo for my main website, which works as a "hub" of bringing all my web projects under one roof. My goal with this website is to provide a one-stop-shop for people who want to learn more about my web development skillset, and how I will incorporate a personal touch into my web design to show more of who I am. 
+### The 'Grand Central Station' for my Web Projects
+If my website projects were all apartments, (natelalor.com)[https://www.natelalor.com/] would be the apartment _building_. This is my main website, which acts as a connection point for all of my web projects. My goal with this website is to provide a one-stop-shop for people who want to see what I am working on.
+
+### Come look around!
+Start your adventure: (natelalor.com)[https://www.natelalor.com/]
+_Project Timeline: December 30th. 2021 - July 25th, 2022_
 
