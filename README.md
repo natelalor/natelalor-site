@@ -3,5 +3,6 @@ If my website projects were all apartments, [natelalor.com](https://www.natelalo
 
 ### Come look around!
 Start your adventure: [natelalor.com](https://www.natelalor.com/)
+
 _Project Timeline: December 30th. 2021 - July 25th, 2022_
 
