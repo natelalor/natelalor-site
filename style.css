@@ -130,6 +130,7 @@ hr{
 }
 .bottom_text{
     margin-top: 4em;
+    margin-bottom: 0;
 }
 .error_image{
     max-width: 80%;
