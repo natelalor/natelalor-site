@@ -1,7 +1,7 @@
-
+/* 
 body{
     border: 1px solid pink;
-}
+} */
 li{
     padding: 0.2em;
     /* border: 1.5px solid black; */
@@ -13,8 +13,8 @@ li{
 footer{
     display: flex;
     flex-direction: row;
-    font-size:smaller;
     width: 100%;
+    margin: auto;
 }
 .footing_p{
     margin-top: 0.2em;
@@ -25,8 +25,32 @@ footer>a{
     width: 100%;
 }
 .footer_img{
-    width: 2.5%;
-    padding-left: 0.3em;
-    padding-right: 0.3em;
+    width: 30%;
+    padding: 1em;
 }
-
+.article_footer{
+    display: none;
+}
+.web_title, .goodies_title{
+    font-size: 15pt;
+}
+/* .list_wrapper_1, .list_wrapper_2{
+    border: 2px solid red;
+} */
+.list_wrapper_1>h2{
+    width: 20%;
+}
+.list_wrapper_2>h2{
+    width: 20%;
+}
+/* .list_wrapper_1>ul{
+    
+} */
+a{
+    font-weight: bolder;
+    font-size: 11pt;
+}
+a:visited{
+    font-weight: bolder;
+    font-size: 11pt;
+}

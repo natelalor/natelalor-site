@@ -90,6 +90,7 @@ img{
 footer {
     display: flex;
     flex-direction: row;
+    justify-content: flex-end;
     font-size:smaller;
     width: 100%;
 }
