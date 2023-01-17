@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UT-8">
+        <title>journal #1</title>
+        <meta name="author" content="Nate Lalor">
+        <meta name="description" content="nate's website">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <a href="index.html"><h4>back</h4></a>
+        <h1 class="journal_header">journal #1</h1>
+        <h4 class="gray_h4">my SFML & M1 Mac C++ linking experience</h4>
+        <p>
+            My issue was that while I downloaded SFML successfully, the SFML linker support was for x86_64 (or something like that) instead of arm64. In other words, it supported the Intel chip for mac, but not M1 chip for mac. There were a TON of resources for Mac and SFML, and even Mac, SFML, and CLion (<a href="https://remy-villulles.medium.com/compile-and-install-sfml-2-5-1-on-macos-with-clion-and-cmake-b4e52199db1c"target="_blank" rel="noreferrer noopener">here</a>, <a href="https://giovanni.codes/sfml-2-5-1-setup-on-macos-with-clion/"target="_blank" rel="noreferrer noopener">here</a>, etc). But the problem was finding one which was arm64 compatible, or M1 compatible.
+        </p>
+        <p>
+            So, I had to figure out how to update the SFML compatibility to M1 chip. Fortunately, there was mention of how to do this. This wasn’t a new thing, SFML + M1 (here, here, here, here, and here), but most of the support was for other IDEs (Visual Studio, Xcode, etc). 
+        </p>
+        <h3>Some support articles almost got me there:</h3>
+        <ul>
+            <li>SFML and Linux (which performed linking similarly, but I couldn’t figure out how to do the directory pathing it wanted me to do): here </li>
+        </ul>
+        <h3>While other support articles did not: </h3>
+        <ul>
+            <li>terrible website that claimed to have the issue solved: here</li>
+            <li>my exact issue on stackoverflow, left unsolved: here</li>
+        </ul>
+        <h3>Finally, I found a video that did work:</h3>
+        <ul>
+            <li>here</li>
+        </ul>
+        <p>
+            He shows you how to use Homebrew to install SFML, then finds that installation to point your compiler to it when you try to compile/run your C++ program.
+        </p>
+        <p>
+            The problem with this is, obviously, this is a complete workaround to CLion and thus you'd just externally use the command line to compile/run your program. In my case it is doable, but definitely more annoying. 
+        </p>
+    </body>
+
+    <hr>
+
+    <footer>
+        <p class="footing_p"></p> <!-- Let's get in touch! -->
+        <a href="mailto:natelalor@gmail.com" target="_blank" rel="noreferrer noopener" class="footer_img"><img src="images/email.png" alt="email logo"></a> <a href="https://github.com/natelalor" target="_blank" rel="noreferrer noopener" class="footer_img"><img src="images/github.png" alt="GitHub logo"></a> <a href="https://www.linkedin.com/in/natelalor/" target="_blank" rel="noreferrer noopener" class="footer_img"><img src="images/linkedin.png" alt="LinkedIn logo"></a>
+        <!-- Icons via: https://flaticon.com/ -->
+    </footer>
