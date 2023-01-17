@@ -7,23 +7,56 @@
         <meta name="description" content="nate's website">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
-        <!--Old Font Documentation-->
-        <!--<link rel="preconnect" href="https://fonts.googleapis.com"> 
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet"> -->
-        <!--New Font :)-->
+        <!-- Mobile Styling-->
+        <link rel="stylesheet" media="(max-width: 600px)" href="phone.css" type="text/css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Square+Peg&display=swap" rel="stylesheet"> 
-
-
     </head>
 
     <body>
-        <a href="index.html"><h4>back</h4></a>
+        <a href="index.html"><h4>back to safety</h4></a>
         <h1 class="journal_header">journal #2</h1>
         <h4 class="gray_h4">a look into my first <i>real</i> experience with C++ game design</h4>
+        <hr>
         <h5 class="petals_plug">This is the same game that was included in journal #1. You can learn more about that <a href="https://github.com/natelalor/petals"target="_blank" rel="noreferrer noopener">here</a>.</h5>
+
+        <h2>Petals -- Complete Documentation</h2>
+        <h4><i>Project Timeline: ~December 20th, 2022 - Present</i></h4>
+        <h3>TL;DR</h3>
+        <p>A game using C++ and SFML. You protect a flower, balancing the number of petals it has. Too few or too many, you lose the game. A fun side project for me. </p>
+
+        <h3>Goals</h3>
+        <ul>
+            <li>Learn more about game development and the game development process (how does it differ?). </li>
+            <li>Learn more about game design integration.</li>
+            <li>Diversify skills in an area less-acquainted with.</li>
+            <li>Can always use more C++ practice! :)</li>
+        </ul>
+        <h3>Extended Documentation</h3>
+        <p>
+            I've been learning computer science for multiple years now, and just recently I've started to think about game development. I grew up a gamer, and I wanted a chance to turn the tables and see how a game would be created. With that in mind, I waited for a break between my university assignments where I had some time to dig in and tackle this interesting new topic. I set into this project with some past knowledge of C++, CMake, as well as a lot of experience playing games and creative thinking.
+        </p>
+        <p>
+            The first step was initial planning. I needed to think through how the game would look, what the user functionality would be like, and well, what the game would be! After a few days of brainstorming, I decided on a playful game style that would reflect my creative and enthusiastic side. I finalized what I wanted the game to be, and started to think about code structure. How would I actually bring this to life in C++? What IDE should I use? How do I use rendering integration with C++? CLion? In the past, I worked on a project where I used just the built-in C++ presentation method, but I really did not want to do that again. This is a much more complex game than that, and the past project was dozens of vertices all making up objects that acted together with specific styling... It was quite the endeavor and I wanted a) a different design style than that, and b) a more modern and smooth approach to C++ development in this way.
+        </p>
+        <p>
+            Obviously, as soon as one question was answered, 3 more were replaced. But I was loving this progression of work - I wanted to start from scratch and answer all the questions as I went. As I got more and more into the 'game development rabbit hole', I realized this side of coding integrated creativity a lot more than other coding. While I think I still prefer other coding use-cases, game development was a refreshing change.
+
+        </p>
+        <p>
+            Next, I had to figure out what to pair with C++ to make visuals and a game presentation for the user. After some advice-seeking from peers, I spent a while using Xcode and Metal for MacOS rendering. This seemed approachable to me because I had just finished a project using Xcode & Swift, so there wasn't much dust to brush off. As I started working, however, more and more problems seemed to arise. Because I already had a predetermined look and style for my game in my head and sketched out, I realized Metal may not be the best solution. While it is a terrific graphics framework, I wanted something that was more customizable to fit my specific needs. So, after some time trying to make it work with Metal, I was back to the drawing board.
+        </p>
+        <p>
+            Then, after many more hours looking into C++ methods of game development, I stumbled across SFML. While it was outdated, it seemingly was a perfect fit for C++ integration and how I wanted to structure my game. So, attempt number two was CLion and SFML.
+        </p>
+        <p>
+            Which worked a lot better! Until... it didn't. I found resources that displayed sprite integration, which meant I could bring in some drawings of mine and use them as objects for my game. This is exactly what I wanted! The problem and my solution is outlined in journal #1, which you can catch up <a href="article1.html">here</a> if you haven't seen.
+        </p>
+        <p>
+            Now that we finally got through compiling with C++, M1, and SFML (although without directly using CLion, sadly), we are finally getting into general game development and game structure! So, I started by thinking through the specific classes I would need, objects of those classes, and functionality that I should provide for a smooth gaming experience. I implemented the classes flower, bee, wateringcan, and honey. These are the main objects needed in the game, and these classes will allow me to easily compartmentalize what is needed where, and when.
+        </p>
+
         <p class="bottom_text"><i>This is an ongoing article. I will add to this as I progress through the project.</i></p>
         <p><i>Written: January 3rd, 2023 - Present</i></p>
     </body>

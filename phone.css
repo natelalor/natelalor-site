@@ -1,0 +1,32 @@
+
+body{
+    border: 1px solid pink;
+}
+li{
+    padding: 0.2em;
+    /* border: 1.5px solid black; */
+}
+.image_wrapper{
+    width: 100%;
+    display: none;
+}
+footer{
+    display: flex;
+    flex-direction: row;
+    font-size:smaller;
+    width: 100%;
+}
+.footing_p{
+    margin-top: 0.2em;
+    font-size: medium;
+    width: 100%;
+}
+footer>a{
+    width: 100%;
+}
+.footer_img{
+    width: 2.5%;
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+}
+

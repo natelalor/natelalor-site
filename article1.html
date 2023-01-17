@@ -7,23 +7,27 @@
         <meta name="description" content="nate's website">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
+        <!-- Mobile Styling-->
+        <link rel="stylesheet" media="(max-width: 600px)" href="phone.css" type="text/css">
         <!--Old Font Documentation-->
+        <!-- ------------------ -->
         <!--<link rel="preconnect" href="https://fonts.googleapis.com"> 
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet"> -->
+        <!-- ------------------ -->
         <!--New Font :)-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Square+Peg&display=swap" rel="stylesheet"> 
-
-
     </head>
 
     <body>
-        <a href="index.html"><h4>back</h4></a>
+        <a href="index.html"><h4>back to safety</h4></a>
         <h1 class="journal_header">journal #1</h1>
         <h4 class="gray_h4">my SFML & M1 Mac C++ linking experience</h4>
+        <hr>
         <h5 class="petals_plug">(This is an obstacle I hit while working on developing a game. You can find more about that at my GitHub Repository for the game, <a href="https://github.com/natelalor/petals"target="_blank" rel="noreferrer noopener">here</a>!)</h5>
+        
         <p>
             My issue was that while I downloaded SFML successfully, the SFML linker support was for x86_64 (or something like that) instead of arm64. In other words, it supported the Intel chip for mac, but not M1 chip for mac. There were a TON of resources for Mac and SFML, and even Mac, SFML, and CLion (<a href="https://remy-villulles.medium.com/compile-and-install-sfml-2-5-1-on-macos-with-clion-and-cmake-b4e52199db1c"target="_blank" rel="noreferrer noopener">here</a>, <a href="https://giovanni.codes/sfml-2-5-1-setup-on-macos-with-clion/"target="_blank" rel="noreferrer noopener">here</a>, etc). But the problem was finding one which was arm64 compatible, or M1 compatible.
         </p>
@@ -55,6 +59,7 @@
         <p>
             He shows you how to use Homebrew to install SFML, then finds that installation to point your compiler to it when you try to compile/run your C++ program. The problem with this is, obviously, this is a complete workaround to CLion and thus you'd just externally use the command line to compile/run your program. In my case it is doable, but definitely more annoying. Conclusively, this was the solution I did go with, and it has been working well for me since.
         </p>
+
         <p class="bottom_text"><i>Written: January 8th, 2023</i></p>
     </body>
     <hr>
