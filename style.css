@@ -110,6 +110,9 @@ footer>a{
 hr{
     width: 100%;
 }
+.phone_hr{
+    display: none;
+}
 /* ARTICLE PAGES */
 .gray_h4{
     color: gray;

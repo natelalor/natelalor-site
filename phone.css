@@ -1,7 +1,18 @@
-/* 
-body{
+
+/* body{
     border: 1px solid pink;
 } */
+.main_title{
+    text-align: center;
+}
+.intro_p{
+    display: flex;
+    /* justify-content: center; */
+    text-align: center;
+}
+.phone_hr{
+    display: flex;
+}
 li{
     padding: 0.2em;
     /* border: 1.5px solid black; */
