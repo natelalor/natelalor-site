@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="UT-8">
-        <title>journal #1</title>
+        <title>journal #2</title>
         <meta name="author" content="Nate Lalor">
         <meta name="description" content="nate's website">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,18 +21,12 @@
 
     <body>
         <a href="index.html"><h4>back</h4></a>
-        <h1 class="journal_header">journal #1</h1>
-        <h4 class="gray_h4">my SFML & M1 Mac C++ linking experience</h4>
-        <h5 class="petals_plug">(This is an obstacle I hit while working on developing a game. You can find more about that at my GitHub Repository for the game, <a href="https://github.com/natelalor/petals"target="_blank" rel="noreferrer noopener">here</a>!)</h5>
+        <h1 class="journal_header">journal #2</h1>
+        <h4 class="gray_h4">a look into my first <i>real</i> experience with C++ game design</h4>
+        <h5 class="petals_plug">This is the same game that was included in journal #1. You can learn more about that <a href="https://github.com/natelalor/petals"target="_blank" rel="noreferrer noopener">here</a>.</h5>
         <p>
             My issue was that while I downloaded SFML successfully, the SFML linker support was for x86_64 (or something like that) instead of arm64. In other words, it supported the Intel chip for mac, but not M1 chip for mac. There were a TON of resources for Mac and SFML, and even Mac, SFML, and CLion (<a href="https://remy-villulles.medium.com/compile-and-install-sfml-2-5-1-on-macos-with-clion-and-cmake-b4e52199db1c"target="_blank" rel="noreferrer noopener">here</a>, <a href="https://giovanni.codes/sfml-2-5-1-setup-on-macos-with-clion/"target="_blank" rel="noreferrer noopener">here</a>, etc). But the problem was finding one which was arm64 compatible, or M1 compatible.
         </p>
-        <p>
-            For reference, here is the error I was trying to solve on CLion:
-        </p>
-        <div class="error_image">
-            <img src="images/error_message.png">
-        </div>
         <p>
             So, I had to figure out how to update the SFML compatibility to M1 chip. Fortunately, there was mention of how to do this. This wasn't a new thing, SFML + M1 (<a href="https://en.sfml-dev.org/forums/index.php?topic=27867.0"target="_blank" rel="noreferrer noopener">here</a>, <a href="https://en.sfml-dev.org/forums/index.php?topic=27893.0"target="_blank" rel="noreferrer noopener">here</a>, <a href="https://www.reddit.com/r/sfml/comments/wg8upl/does_sfml_work_on_m1_mac_how_should_i_go_about/"target="_blank" rel="noreferrer noopener">here</a>, <a href="https://www.sfml-dev.org/tutorials/2.5/start-osx.php"target="_blank" rel="noreferrer noopener">here</a>, and <a href="https://www.youtube.com/watch?v=kusRtYC-wj4"target="_blank" rel="noreferrer noopener">here</a>), but most of the support was for other IDEs (Visual Studio, Xcode, etc). 
         </p>
