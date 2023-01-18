@@ -107,6 +107,11 @@ footer>a{
     padding-left: 0.3em;
     padding-right: 0.3em;
 }
+.footer_img_special{
+    width: 2.6%;
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+}
 hr{
     width: 100%;
 }
