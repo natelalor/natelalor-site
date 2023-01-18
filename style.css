@@ -1,7 +1,14 @@
-
+* {
+    margin: 0;
+    padding: 0;
+}
 :root {
     font-family: 'Roboto', sans-serif;
     font-size:medium;
+}
+.main_title{
+    font-size: 3rem;
+    font-weight: 600;
 }
 .p_wrapper{
     margin-bottom: 2em;
@@ -28,6 +35,9 @@ a:visited{
     text-decoration: none;
     font-weight: bold;
 }
+.back_button{
+    width: 9.6%;
+}
 li {
     font-size:small;
 }
@@ -43,7 +53,7 @@ body {
     flex-direction: column;
     justify-content: center;
     margin: auto;
-    margin-top: 8em;
+    margin-top: 4em;
     width: 75%;
     max-width: 100%;
 }
@@ -106,11 +116,20 @@ footer>a{
     width: 2.5%;
     padding-left: 0.3em;
     padding-right: 0.3em;
+    transition: all 200ms ease;
+    border-radius: 100px;
 }
 .footer_img_special{
     width: 2.6%;
     padding-left: 0.3em;
     padding-right: 0.3em;
+    transition: all 200ms ease;
+}
+.footer_img:hover{
+    transform: scale(1.2);
+}
+.footer_img_special:hover{
+    transform: scale(1.2);
 }
 hr{
     width: 100%;
@@ -147,5 +166,24 @@ hr{
     max-width: 100%;
     width: 25%;
 }
+/* .icon{
+    color: black;
+    width: 100;
+    font-size: 20pt;
+    transition: all 200ms ease;
+}
+.icon:hover{
+    color: cadetblue;
+} */
 
-
+.underline{
+    background: linear-gradient(0deg, cadetblue, cadetblue) no-repeat right bottom / 0 var(--bg-h);
+    transition: background-size 350ms;
+    /* --bg-h: 100%; */
+    padding-bottom: 2px;
+    --bg-h: 2px;
+}
+.underline:where(:hover, :focus-visible) {
+    background-size: 100% var(--bg-h);
+    background-position-x: left;
+}
