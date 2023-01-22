@@ -196,31 +196,54 @@ hr{
 }
 .match_img_flex{
     display: flex;
-    border: 2px solid blue;
 }
 .first_fifth_img_wrapper{
     max-width: 100%;
 }
-.phones_img_wrapper{
-    max-width: 100%;
-    width: 20%;
+.img_text_wrapper_2{
     display: flex;
     flex-direction: row;
+
+}
+.img_wrapper_solo{
+    max-width: 100%;
+    width: 30%;
+    margin-right: 2em;
+}
+.phones_img_wrapper{
+    max-width: 100%;
+    width: 18%;
+    display: flex;
+    flex-direction: row;
+}
+.phones_img_wrapper>img{
+    margin-left: 0.3em;
+    margin-right: 0.3em;
 }
 .rest_of_pics_wrapper{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
-    border: 2px solid pink;
 }
 .img_with_caption{
-    border: 2px solid blue;
+    width: 32.9%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.img_caption{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: gray;
 }
 .wizard_imagex{
-    width: 30%;
+    width: 90%;
     border: 2px solid black;
     margin: 0.5em;
+    display: flex;
+    justify-content: center;
 }
 /* .icon{
     color: black;
