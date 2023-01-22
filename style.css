@@ -207,15 +207,20 @@ hr{
     display: flex;
     flex-direction: row;
 }
-.rest_of_pics{
+.rest_of_pics_wrapper{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
+    border: 2px solid pink;
+}
+.img_with_caption{
+    border: 2px solid blue;
 }
 .wizard_imagex{
     width: 30%;
     border: 2px solid black;
+    margin: 0.5em;
 }
 /* .icon{
     color: black;
