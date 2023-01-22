@@ -44,7 +44,7 @@ a:visited{
     font-weight: bold;
 }
 .back_button{
-    width: 9.6%;
+    width: 9.8%;
 }
 li {
     font-size:medium;
@@ -186,7 +186,36 @@ hr{
 }
 .wizard_image{
     max-width: 100%;
-    width: 25%;
+    /* width: 90%; */
+    border: 2px solid black;
+}
+.img_text_wrapper_1{
+    display: flex;
+    margin-top: 2em;
+    text-indent: 4%; 
+}
+.match_img_flex{
+    display: flex;
+    border: 2px solid blue;
+}
+.first_fifth_img_wrapper{
+    max-width: 100%;
+}
+.phones_img_wrapper{
+    max-width: 100%;
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+}
+.rest_of_pics{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.wizard_imagex{
+    width: 30%;
+    border: 2px solid black;
 }
 /* .icon{
     color: black;
