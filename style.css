@@ -10,6 +10,7 @@
     font-size: 3rem;
     font-weight: 600;
     margin-bottom: 0.5em;
+    margin-top: -0.7em;
 }
 .p_wrapper{
     margin-bottom: 2em;
@@ -29,7 +30,7 @@ p{
 }
 ul {
     list-style-type: none;
-    line-height: 200%;
+    line-height: 250%;
     width: 70%;
     padding-left: 3em;
 }
