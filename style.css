@@ -20,10 +20,24 @@ body{
 .tech-stack-wrapper {
     background-color: gold;
     width: 40%;
-    border-radius: 10px;
+    border-radius: 1em;
+}
+.projects-wrapper {
+    display: flex;
+    align-items: stretch;
+}
+.projects-left-container, .projects-right-container {
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    width: 40%;
+    padding-right: 1em;
+    padding-left: 1em;
 }
 .project-container {
     border: 2px solid red;
+    border-radius: 2em;
+    padding: 1em;
 }
 h1 {
     font-weight: bold;
