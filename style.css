@@ -22,6 +22,9 @@ body{
     width: 40%;
     border-radius: 10px;
 }
+.project-container {
+    border: 2px solid red;
+}
 h1 {
     font-weight: bold;
 }
