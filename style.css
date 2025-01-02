@@ -48,6 +48,7 @@ footer ul {
     flex-direction: row;
     justify-content: flex-end;
     margin-top: 0.3em;
+    list-style-type: none;
 }
 footer ul li {
     width: 3%;
