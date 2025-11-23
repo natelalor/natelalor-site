@@ -16,6 +16,12 @@ body {
     flex-direction: column;
     margin: auto;
 }
+.temp_wrapper {
+    text-align: center;
+}
+.temp_text {
+    padding: 1em;
+}
 img{
     max-width: 100%;
 }
