@@ -8,7 +8,7 @@
 }
 
 /******************/
-/** MAIN STYLING **/
+/** INDEX STYLING **/
 /******************/
 
 body {
@@ -16,6 +16,57 @@ body {
     flex-direction: column;
     margin: auto;
 }
+
+.links_wrapper {
+    display: flex;
+    padding: 5em;
+    padding-top: 13em;
+    align-items: center;
+    margin: auto;
+    justify-content: center;
+} 
+.links_wrapper a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 3em;
+    margin-right: 3em;
+    /* border: 2px solid blue; */
+}
+
+/* about link styling */
+.about_link a img {
+    width: 10em;
+}
+.purple_flower_hover_gif img {
+    content:url("images/flower_purple_1.png");
+}
+.purple_flower_hover_gif:hover img {
+    content: url("images/flower_purple.gif");
+}
+
+/* projects link styling */
+.projects_link a img {
+    width: 10em;
+}
+.orange_flower_hover_gif img {
+    content:url("images/flower_orange_1.png");
+}
+.orange_flower_hover_gif:hover img {
+    content: url("images/flower_orange.gif");
+}
+/* todotracker link styling */
+.todotracker_link a img {
+    width: 10em;
+}
+.blue_flower_hover_gif img {
+    content:url("images/flower_blue_1.png");
+}
+.blue_flower_hover_gif:hover img {
+    content: url("images/flower_blue.gif");
+}
+
 .first_wrapper{
     display: flex;
     flex-direction: row;
