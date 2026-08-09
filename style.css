@@ -1,10 +1,10 @@
 * {
     margin: 0;
-    padding: 0;
+padding: 0;
 }
 :root {
-    font-family: 'Roboto', sans-serif;
-    font-size:medium;
+font-family: 'Roboto', sans-serif;
+font-size:medium;
 }
 
 /******************/
@@ -12,128 +12,165 @@
 /******************/
 
 body {
+display: flex;
+flex-direction: column;
+margin: auto;
+}
+
+/* scrolling hillside background */
+.scene-wrapper {
+    position: fixed;
+    inset: 0;
+    overflow: hidden;
+    z-index: -1;
+}
+.scene-track {
     display: flex;
-    flex-direction: column;
-    margin: auto;
+    width: 200%;
+    height: 100%;
+    animation: scroll-bg 40s linear infinite;
+}
+.scene-tile {
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    flex-shrink: 0;
+}
+@keyframes scroll-bg {
+    from { transform: translateX(0); }
+    to   { transform: translateX(-50%); }
 }
 
 .links_wrapper {
-    display: flex;
-    padding: 5em;
-    padding-top: 13em;
-    align-items: center;
-    margin: auto;
-    justify-content: center;
+display: flex;
+padding: 5em;
+padding-top: 13em;
+align-items: center;
+margin: auto;
+justify-content: center;
 } 
 .links_wrapper a {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-left: 3em;
-    margin-right: 3em;
-    /* border: 2px solid blue; */
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+margin-left: 3em;
+margin-right: 3em;
+/* border: 2px solid blue; */
 }
 
 /* about link styling */
 .about_link a img {
-    width: 10em;
+width: 10em;
 }
 .purple_flower_hover_gif img {
-    content:url("images/flower_purple_1.png");
+content:url("images/flower_purple_1.png");
 }
 .purple_flower_hover_gif:hover img {
-    content: url("images/flower_purple.gif");
+content: url("images/flower_purple.gif");
 }
 
 /* projects link styling */
 .projects_link a img {
-    width: 10em;
+width: 10em;
 }
 .orange_flower_hover_gif img {
-    content:url("images/flower_orange_1.png");
+content:url("images/flower_orange_1.png");
 }
 .orange_flower_hover_gif:hover img {
-    content: url("images/flower_orange.gif");
+content: url("images/flower_orange.gif");
 }
 
 /* todotracker link styling */
 .todotracker_link a img {
-    width: 10em;
+width: 10em;
 }
 .blue_flower_hover_gif img {
-    content:url("images/flower_blue_1.png");
+content:url("images/flower_blue_1.png");
 }
 .blue_flower_hover_gif:hover img {
-    content: url("images/flower_blue.gif");
+content: url("images/flower_blue.gif");
 }
 
 /* mystery link styling */
 .mystery_link a img {
-    width: 10em;
+width: 10em;
 }
 .red_flower_hover_gif img {
-    content:url("images/flower_red_1.png");
+content:url("images/flower_red_1.png");
 }
 .red_flower_hover_gif:hover img {
-    content: url("images/flower_red.gif");
+content: url("images/flower_red.gif");
 }
 
+/* home button styling */
+.return_to_home a img {
+width: 4em;
+position: fixed;
+display: absolute;
+}
+.white_flower_hover_gif img {
+content:url("images/flower_white_1.png");
+}
+.white_flower_hover_gif:hover img {
+content: url("images/flower_white.gif");
+}
 .first_wrapper{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: 5em;
-    text-align: center;
-    border: blue 2px solid;
+display: flex;
+flex-direction: row;
+justify-content: center;
+padding: 5em;
+text-align: center;
+border: blue 2px solid;
 }
 .first_img_wrapper{
-    border: red 2px solid;
+border: red 2px solid;
 }
 /* .img_wrapper img{
     max-width: 30%;
 } */
 .first_text_wrapper{
-    display: flex;
-    flex-direction: column;
-    border: green 2px solid;
+display: flex;
+flex-direction: column;
+border: green 2px solid;
 }
 .first_text_wrapper p{
-    font-size: 1.5em;
-    padding: 1em;
+font-size: 1.5em;
+padding: 1em;
 }
 .second_text_wrapper{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: 5em;
-    text-align: center;
-    border: purple 2px solid;
+display: flex;
+flex-direction: row;
+justify-content: center;
+padding: 5em;
+text-align: center;
+border: purple 2px solid;
 }
 .second_text_wrapper{
-    display: flex;
-    border: green 2px solid;
+display: flex;
+border: green 2px solid;
 }
 .second_text_wrapper p{
-    font-size: 1.5em;
-    padding-left: 1em;
-    padding-right: 1em;
+font-size: 1.5em;
+padding-left: 1em;
+padding-right: 1em;
 }
 .second_img_wrapper{
-    border: red 2px solid;
+border: red 2px solid;
 }
 img{
-    max-width: 100%;
+max-width: 100%;
 }
 a{
-    color: cadetblue;
-    text-decoration: none;
-    font-weight: bold;
+color: cadetblue;
+text-decoration: none;
+font-weight: bold;
 }
 a:visited{
-    color: cadetblue;
-    text-decoration: none;
-    font-weight: bold;
+color: cadetblue;
+text-decoration: none;
+font-weight: bold;
 }
 
 /************/
@@ -141,30 +178,30 @@ a:visited{
 /************/
 
 footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-top: 2px solid black;
-    margin-left: 10em;
-    margin-right: 10em;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+border-top: 2px solid black;
+margin-left: 10em;
+margin-right: 10em;
 }
 footer ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    margin-top: 0.3em;
-    list-style-type: none;
+display: flex;
+flex-direction: row;
+justify-content: flex-end;
+margin-top: 0.3em;
+list-style-type: none;
 }
 footer ul li {
-    width: 3%;
-    padding-left: 0.2em;
-    padding-right: 0.2em;
-    transition: all 200ms ease;
-    border-radius: 100px;
+width: 3%;
+padding-left: 0.2em;
+padding-right: 0.2em;
+transition: all 200ms ease;
+border-radius: 100px;
 }
 footer ul li:hover {
-    transform: scale(1.2);
+transform: scale(1.2);
 }
 
 /*********************/
@@ -175,7 +212,7 @@ footer ul li:hover {
     background: linear-gradient(0deg, cadetblue, cadetblue) no-repeat right bottom / 0 var(--bg-h);
     transition: background-size 350ms;
     /* --bg-h: 100%; */
-    /* padding-bottom: 2px;
+/* padding-bottom: 2px;
     --bg-h: 2px;
 }
 .underline:where(:hover, :focus-visible) {
