@@ -7,15 +7,29 @@ font-family: 'Roboto', sans-serif;
 font-size:medium;
 }
 
-/******************/
-/** INDEX STYLING **/
-/******************/
-
 body {
 display: flex;
 flex-direction: column;
 margin: auto;
 }
+
+img{
+max-width: 100%;
+}
+a{
+color: cadetblue;
+text-decoration: none;
+font-weight: bold;
+}
+a:visited{
+color: cadetblue;
+text-decoration: none;
+font-weight: bold;
+}
+
+/******************************/
+/**       INDEX STYLING      **/
+/******************************/
 
 /* scrolling hillside background */
 .scene-wrapper {
@@ -42,6 +56,7 @@ margin: auto;
     to   { transform: translateX(-50%); }
 }
 
+/* flower spacing & size */
 .links_wrapper {
 display: flex;
 padding: 5em;
@@ -71,8 +86,8 @@ content:url("images/flower_purple_1.png");
 content: url("images/flower_purple.gif");
 }
 
-/* projects link styling */
-.projects_link a img {
+/* portfolio link styling */
+.portfolio_link a img {
 width: 10em;
 }
 .orange_flower_hover_gif img {
@@ -82,8 +97,8 @@ content:url("images/flower_orange_1.png");
 content: url("images/flower_orange.gif");
 }
 
-/* todotracker link styling */
-.todotracker_link a img {
+/* goals link styling */
+.goals_link a img {
 width: 10em;
 }
 .blue_flower_hover_gif img {
@@ -116,7 +131,12 @@ content:url("images/flower_white_1.png");
 .white_flower_hover_gif:hover img {
 content: url("images/flower_white.gif");
 }
-.first_wrapper{
+
+/*********************************/
+/**       ABOUT ME STYLING      **/
+/*********************************/
+
+.about_me_main_wrapper_1 {
 display: flex;
 flex-direction: row;
 justify-content: center;
@@ -124,13 +144,11 @@ padding: 5em;
 text-align: center;
 border: blue 2px solid;
 }
-.first_img_wrapper{
+.about_me_first_img_wrapper{
 border: red 2px solid;
 }
-/* .img_wrapper img{
-    max-width: 30%;
-} */
-.first_text_wrapper{
+
+.about_me_text_wrapper_1 {
 display: flex;
 flex-direction: column;
 border: green 2px solid;
@@ -158,19 +176,6 @@ padding-right: 1em;
 }
 .second_img_wrapper{
 border: red 2px solid;
-}
-img{
-max-width: 100%;
-}
-a{
-color: cadetblue;
-text-decoration: none;
-font-weight: bold;
-}
-a:visited{
-color: cadetblue;
-text-decoration: none;
-font-weight: bold;
 }
 
 /************/
