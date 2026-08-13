@@ -146,7 +146,6 @@ padding-top: 2em;
 padding-left: 7em;
 padding-right: 7em;
 padding-bottom: 2em;
-/* border: blue 2px solid; */
 }
 
 .img_of_me_wrapper {
@@ -154,7 +153,6 @@ flex: 0 0 40%;
 display: flex;
 justify-content: center;   
 align-items: center;       
-/* border: red 2px solid; */
 }
 
 .img_of_me {
@@ -169,13 +167,7 @@ align-items: center;
     flex-direction: column;
     font-size: 1.5em;
     padding: 1em;
-    /* border: 2px solid red; */
 }
-/* .intro_text_wrapper_2 {
-    font-size: 1.5em;
-    padding: 1em;
-    border: 2px solid blue;
-} */
 
 .intro_text_wrapper h2 {
     padding-top: 0.5em;
@@ -192,16 +184,8 @@ align-items: center;
     flex-direction: column;
 }
 
-/* .about_me_subtitle {
-    align-items: center;
-    padding-top: 1em;
-    padding-bottom: 0.5em;
-    font-size: 1.2em;
-    font-style: bold;
-} */
-
 .redirects_wrapper {
-    border: black 2px solid;
+    border: black 1px solid;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -211,24 +195,22 @@ align-items: center;
 }
 
 .connect_with_me_wrapper{
-display: flex;
-flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 .connect_with_me_wrapper p{
-font-size: 1.5em;
-/* padding-left: 1em;
-padding-right: 1em; */
+    font-size: 1.5em;
+    /* padding-left: 1em;
+    padding-right: 1em; */
 }
 
-.connect_linkedin_wrapper {
-    border: 2px solid rgb(243, 232, 117);
-    border-radius: 1em;
-    margin: 1em;
-    padding-left: 2em;
-    padding-right: 2em;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
+.social_media_h1 {
+    padding: 1em;
+    margin-top: 0.5em;
+    font-size: 2em;
+    font-weight: bold;
+    align-self: center;
 }
 
 .connect_linkedin_wrapper {
@@ -243,9 +225,15 @@ padding-right: 1em; */
     flex-direction: row;
     justify-content: space-between;
 }
+.connect_linkedin_wrapper:hover {
+    background-color: rgb(243, 232, 117);
+}
 
 .connect_linkedin_wrapper div {
-    border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     flex: 30%;
 }
 
