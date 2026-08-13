@@ -159,8 +159,9 @@ align-items: center;
 
 .img_of_me {
   max-width: 100%;           
-  height: auto;
+  height: 32em;
   display: block;
+  border-radius: 10%;
 }
 
 .intro_text_wrapper {
@@ -170,11 +171,11 @@ align-items: center;
     padding: 1em;
     /* border: 2px solid red; */
 }
-.intro_text_wrapper_2 {
+/* .intro_text_wrapper_2 {
     font-size: 1.5em;
     padding: 1em;
-    /* border: 2px solid blue; */
-}
+    border: 2px solid blue;
+} */
 
 .intro_text_wrapper h2 {
     padding-top: 0.5em;
@@ -199,19 +200,94 @@ align-items: center;
     font-style: bold;
 } */
 
+.redirects_wrapper {
+    border: black 2px solid;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 2em;
+    text-align: center;
+    font-weight: bold;
+}
+
 .connect_with_me_wrapper{
 display: flex;
 flex-direction: column;
-justify-content: center;
-padding: 5em;
-text-align: center;
-border: black 2px solid;
 }
 
 .connect_with_me_wrapper p{
 font-size: 1.5em;
-padding-left: 1em;
-padding-right: 1em;
+/* padding-left: 1em;
+padding-right: 1em; */
+}
+
+.connect_linkedin_wrapper {
+    border: 2px solid rgb(243, 232, 117);
+    border-radius: 1em;
+    margin: 1em;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+.connect_linkedin_wrapper {
+    border: 2px solid rgb(243, 232, 117);
+    border-radius: 1em;
+    margin: 1em;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.connect_linkedin_wrapper div {
+    border: 2px solid red;
+    flex: 30%;
+}
+
+.connect_linkedin_wrapper h1 {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.connect_medium_wrapper {
+    border: 2px solid rgb(243, 232, 117);
+    border-radius: 1em;
+    margin: 1em;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+.connect_instagram_wrapper {
+    border: 2px solid rgb(243, 232, 117);
+    border-radius: 1em;
+    margin: 1em;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.connect_github_wrapper {
+    border: 2px solid rgb(243, 232, 117);
+    border-radius: 1em;
+    margin: 1em;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+.linkedin_profile_photo {
+    max-width: 100%;
+    width: 10em;
+}
+.linkedin_profile_photo:hover {
+transform: scale(1.5);
 }
 
 /************/
