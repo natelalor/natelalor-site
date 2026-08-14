@@ -224,9 +224,17 @@ align-items: center;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    max-width: 25em;      
+    align-self: center; 
+    /* transition: transform 0.3s ease-in-out;  */
+    /* transform-origin: top left; */
+    overflow: hidden;
+    transition: width 0.3s ease-in-out; 
 }
 .connect_linkedin_wrapper:hover {
     background-color: rgb(243, 232, 117);
+    /* transform: scaleX(1.3);  */
+    width: 50em;
 }
 
 .connect_linkedin_wrapper div {
@@ -240,6 +248,14 @@ align-items: center;
 .connect_linkedin_wrapper h1 {
     font-size: 2em;
     font-weight: bold;
+}
+
+.linkedin_profile_photo {
+    max-width: 100%;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 .connect_medium_wrapper {
@@ -268,14 +284,6 @@ align-items: center;
     padding-right: 2em;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
-}
-
-.linkedin_profile_photo {
-    max-width: 100%;
-    width: 10em;
-}
-.linkedin_profile_photo:hover {
-transform: scale(1.5);
 }
 
 /************/
