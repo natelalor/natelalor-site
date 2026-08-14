@@ -192,17 +192,7 @@ align-items: center;
     padding: 2em;
     text-align: center;
     font-weight: bold;
-}
-
-.connect_with_me_wrapper{
-    display: flex;
-    flex-direction: column;
-}
-
-.connect_with_me_wrapper p{
-    font-size: 1.5em;
-    /* padding-left: 1em;
-    padding-right: 1em; */
+    font-size: large;
 }
 
 .social_media_h1 {
@@ -213,77 +203,31 @@ align-items: center;
     align-self: center;
 }
 
-.connect_linkedin_wrapper {
-    border: 2px solid rgb(243, 232, 117);
-    border-radius: 1em;
-    margin: 1em;
-    padding-left: 2em;
-    padding-right: 2em;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
+.connect_with_me_wrapper{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    max-width: 25em;      
-    align-self: center; 
-    /* transition: transform 0.3s ease-in-out;  */
-    /* transform-origin: top left; */
-    overflow: hidden;
-    transition: width 0.3s ease-in-out; 
-}
-.connect_linkedin_wrapper:hover {
-    background-color: rgb(243, 232, 117);
-    /* transform: scaleX(1.3);  */
-    width: 50em;
-}
-
-.connect_linkedin_wrapper div {
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex: 30%;
 }
 
-.connect_linkedin_wrapper h1 {
-    font-size: 2em;
-    font-weight: bold;
+.connect_with_me_wrapper a {
+    padding: 2em;
+    transition: all 200ms ease;
+    width: 8em;
 }
 
-.linkedin_profile_photo {
+.connect_with_me_wrapper a:hover {
+    transform: scale(1.2);
+}
+
+.footer_flowers_wrapper {
+    line-height: 0;
     max-width: 100%;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    object-fit: cover;
 }
 
-.connect_medium_wrapper {
-    border: 2px solid rgb(243, 232, 117);
-    border-radius: 1em;
-    margin: 1em;
-    padding-left: 2em;
-    padding-right: 2em;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
-}
-
-.connect_instagram_wrapper {
-    border: 2px solid rgb(243, 232, 117);
-    border-radius: 1em;
-    margin: 1em;
-    padding-left: 2em;
-    padding-right: 2em;
-}
-
-.connect_github_wrapper {
-    border: 2px solid rgb(243, 232, 117);
-    border-radius: 1em;
-    margin: 1em;
-    padding-left: 2em;
-    padding-right: 2em;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
+.footer_flowers_img {
+    max-width: 100%;
+    display: block;
 }
 
 /************/
