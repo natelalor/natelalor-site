@@ -230,6 +230,26 @@ align-items: center;
     display: block;
 }
 
+
+/******************************/
+/**       GOALS STYLING      **/
+/******************************/
+.temporary_cover {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;          
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;     
+}
+.temporary_cover_img {
+    max-width: 100%;
+    width: 10em;
+    padding-bottom: 1em;
+}
+
 /************/
 /** FOOTER **/
 /************/
