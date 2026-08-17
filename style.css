@@ -383,19 +383,33 @@ align-items: center;
     padding: 1em;
 }
 .data_projects {
+    padding: 1em;
     border: 2px solid blue;
+    width: 100%;
 }
-.mass_schools_data_project_wrapper {
-    border: 2px solid red;
+.data_projects div {
+    padding: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
     display: flex;
-    border-radius: 1em;
-}
-.bellabeat_data_project_wrapper {
+    flex-direction: row;
+    justify-content: space-evenly;
     border: 2px solid orange;
-    display: flex;
-    border-radius: 1em;
 }
-
+.software_projects {
+    padding: 1em;
+    border: 2px solid purple;
+    width: 100%;
+}
+.software_projects div {
+    padding: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border: 2px solid pink;
+}
 
 /******************************/
 /**       GOALS STYLING      **/
