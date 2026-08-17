@@ -230,6 +230,172 @@ align-items: center;
     display: block;
 }
 
+/**********************************/
+/**       PORTFOLIO STYLING      **/
+/**********************************/
+
+.professional_intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2em;
+    padding-left: 7em;
+    padding-right: 7em;
+    padding-bottom: 2em;
+}
+.professional_text_intro {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5em;
+    padding: 1em;
+}
+
+.skills_container {
+    border: black 2px solid;
+    width: 100%;
+    border-radius: 1.5em;
+    padding-top: 2em;
+    padding-bottom: 0.5em;
+    display: flex;
+    flex-direction: column;  
+    align-items: center;
+    font-size: 1.5em;
+}
+
+.skills_icons_row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1em;
+    flex-wrap: wrap;       
+}
+
+.skills_container img {
+    max-width: 100%;
+    height: 2em;
+}
+
+.skills_text_wrapper {
+    position: relative;
+    width: 100%;
+    margin-top: 1.5em;
+    min-height: 3em;
+    text-align: center;
+}
+
+.skills_text_wrapper p {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: opacity 200ms ease;
+    pointer-events: none;
+}
+
+/* pair each icon with its text via :has() */
+.skills_container:has(.sql_skills_icon:hover) .sql_skills_text { opacity: 1; }
+.skills_container:has(.python_skills_icon:hover) .python_skills_text { opacity: 1; }
+.skills_container:has(.excel_skills_icon:hover) .excel_skills_text { opacity: 1; }
+.skills_container:has(.r_skills_icon:hover) .r_skills_text { opacity: 1; }
+.skills_container:has(.source_control_skills_icon:hover) .source_control_skills_text { opacity: 1; }
+.skills_container:has(.java_skills_icon:hover) .java_skills_text { opacity: 1; }
+.skills_container:has(.cplus_skills_icon:hover) .cplus_skills_text { opacity: 1; }
+.skills_container:has(.github_skills_icon:hover) .github_skills_text { opacity: 1; }
+.skills_container:has(.snowflake_skills_icon:hover) .snowflake_skills_text { opacity: 1; }
+.skills_container:has(.data_analysis_skills_icon:hover) .data_analysis_skills_text { opacity: 1; }
+.skills_container:has(.webdev_skills_icon:hover) .webdev_skills_text { opacity: 1; }
+.skills_container:has(.db_skills_icon:hover) .db_skills_text { opacity: 1; }
+
+.sql_skills_icon:hover {
+    content:url("images/skill_icons/sql_color.png");
+    transform: scale(1.3);
+}
+.python_skills_icon:hover {
+    content:url("images/skill_icons/python_color.png");
+    transform: scale(1.3);
+}
+.excel_skills_icon:hover {
+    content:url("images/skill_icons/excel_color.png");
+    transform: scale(1.3);
+}
+.r_skills_icon:hover {
+    content:url("images/skill_icons/r_color.png");
+    transform: scale(1.3);
+}
+.source_control_skills_icon:hover {
+    content:url("images/skill_icons/source_control_color.png");
+    transform: scale(1.3);
+}
+.java_skills_icon:hover {
+    content:url("images/skill_icons/java_color.png");
+    transform: scale(1.3);
+}
+.cplus_skills_icon:hover {
+    content:url("images/skill_icons/c++_color.png");
+    transform: scale(1.3);
+}
+.github_skills_icon:hover {
+    content:url("images/skill_icons/github_color.png");
+    transform: scale(1.3);
+}
+.snowflake_skills_icon:hover {
+    content:url("images/skill_icons/snowflake_color.png");
+    transform: scale(1.3);
+}
+.data_analysis_skills_icon:hover {
+    content:url("images/skill_icons/data_analysis_color.png");
+    transform: scale(1.3);
+}
+.webdev_skills_icon:hover {
+    content:url("images/skill_icons/webdev_color.png");
+    transform: scale(1.3);
+}
+.db_skills_icon:hover {
+    content:url("images/skill_icons/db_color.png");
+    transform: scale(1.3);
+}
+
+.skills_text_wrapper .skills_placeholder_text {
+    opacity: 1;
+    color: gray;
+}
+.skills_container:has(.skills_icons_row img:hover) .skills_text_wrapper .skills_placeholder_text {
+    opacity: 0;
+}
+
+.projects_wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2em;
+    padding-left: 7em;
+    padding-right: 7em;
+    padding-bottom: 2em;
+}
+
+.projects_intro {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5em;
+    padding: 1em;
+}
+.data_projects {
+    border: 2px solid blue;
+}
+.mass_schools_data_project_wrapper {
+    border: 2px solid red;
+    display: flex;
+    border-radius: 1em;
+}
+.bellabeat_data_project_wrapper {
+    border: 2px solid orange;
+    display: flex;
+    border-radius: 1em;
+}
+
 
 /******************************/
 /**       GOALS STYLING      **/
