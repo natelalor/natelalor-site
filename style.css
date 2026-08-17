@@ -389,7 +389,7 @@ align-items: center;
 }
 
 .project_card {
-    background-color: #f7f7f7;
+    background-color: #eaebdb;
     border: 1px solid #ccc;
     border-radius: 1.5em;
     padding: 2em;
@@ -474,6 +474,13 @@ align-items: center;
 .project_github_icon {
     width: 1.3em;
     height: 1.3em;
+}
+
+.project_finisher_text {
+    display: flex;
+    font-size: 1.5em;
+    justify-content: center;
+    align-items: center;
 }
 
 /******************************/
