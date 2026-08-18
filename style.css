@@ -370,8 +370,8 @@ align-items: center;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-left: 7em;
-    padding-right: 7em;
+    padding-left: 10em;
+    padding-right: 10em;
     padding-bottom: 2em;
 }
 .projects_intro {
@@ -384,12 +384,12 @@ align-items: center;
     display: flex;
     flex-direction: column;
     gap: 1.5em;
-    width: 100%;
+    width: 85%;
     padding: 1em 0;
 }
 
 .project_card {
-    background-color: #eaebdb;
+    background-color: #fefff2;
     border: 1px solid #ccc;
     border-radius: 1.5em;
     padding: 2em;
