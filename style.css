@@ -119,12 +119,45 @@ content:url("images/flower_red_1.png");
 content: url("images/flower_red.gif");
 }
 
-/* home button styling */
-.return_to_home a img {
-width: 4em;
-position: fixed;
-display: absolute;
-padding: 0.5em;
+/*********************************/
+/**       NAV STYLING      **/
+/*********************************/
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+}
+.nav img {
+    width: 4em;
+    padding: 0.5em;
+}
+.nav_toggle {
+    display: none;
+}
+
+.nav_item {
+    display: none;
+}
+
+.nav_toggle:checked ~ .nav_item {
+    display: block;
+}
+/* default state: show the static PNG, hide the gif */
+.flower-open {
+    display: none;
+}
+/* when checked, flip which image shows */
+.nav_toggle:checked ~ label .flower-open {
+    display: block;
+}
+.nav_toggle:checked ~ label .flower-closed {
+    display: none;
+}
+.nav_white_flower_gif:hover {
+    cursor: pointer;
 }
 .white_flower_hover_gif img {
 content:url("images/flower_white_1.png");
@@ -132,6 +165,7 @@ content:url("images/flower_white_1.png");
 .white_flower_hover_gif:hover img {
 content: url("images/flower_white.gif");
 }
+
 
 /*********************************/
 /**       ABOUT ME STYLING      **/
@@ -193,6 +227,10 @@ align-items: center;
     text-align: center;
     font-weight: bold;
     font-size: large;
+    background-image: url("images/about_redirect_background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .social_media_h1 {
