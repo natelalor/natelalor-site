@@ -129,6 +129,7 @@ a:visited{
     justify-content: center;
     align-items: center;
     position: fixed;
+    z-index: 1000;
 }
 .nav img {
     width: 4em;
@@ -648,6 +649,18 @@ transform: scale(1.2);
     content: url("images/phone_background_test.jpg");
 }
 
+.nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1000;
+}
+.nav img {
+    width: 3.3em;
+    padding: 0.5em;
+}
     /* ---- ABOUT ME ---- */
 
 .intro_with_image {
