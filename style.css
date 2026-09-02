@@ -672,6 +672,12 @@ transform: scale(1.2);
     padding: 0.5em 0.5em;
 }
 
+.connect_with_me_wrapper a {
+    padding: 0.5em;
+    transition: all 50ms ease;
+    width: 3.5em;
+}
+
     /* ---- PORTFOLIO ---- */
 
 .professional_intro,
@@ -685,6 +691,15 @@ transform: scale(1.2);
 .projects_intro {
     font-size: 1.1em;
     padding: 0.5em;
+}
+.portfolio_h1 {
+    font-weight: bold;
+    /* padding: 0.3em; */
+    padding-left: 1em;
+    padding-right: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .skills_container {
     font-size: 1em;
