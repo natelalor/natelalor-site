@@ -1,30 +1,30 @@
 * {
     margin: 0;
-padding: 0;
+    padding: 0;
 }
 :root {
-font-family: 'Roboto', sans-serif;
-font-size:medium;
+    font-family: 'Roboto', sans-serif;
+    font-size:medium;
 }
 
 body {
-display: flex;
-flex-direction: column;
-margin: auto;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
 }
 
 img{
-max-width: 100%;
+    max-width: 100%;
 }
 a{
-color: cadetblue;
-text-decoration: none;
-font-weight: bold;
+    color: cadetblue;
+    text-decoration: none;
+    font-weight: bold;
 }
 a:visited{
-color: cadetblue;
-text-decoration: none;
-font-weight: bold;
+    color: cadetblue;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 /******************************/
@@ -58,65 +58,65 @@ font-weight: bold;
 
 /* flower spacing & size */
 .links_wrapper {
-display: flex;
-padding: 5em;
-padding-top: 13em;
-align-items: center;
-margin: auto;
-justify-content: center;
+    display: flex;
+    padding: 5em;
+    padding-top: 13em;
+    align-items: center;
+    margin: auto;
+    justify-content: center;
 } 
 .links_wrapper a {
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-margin-left: 3em;
-margin-right: 3em;
-/* border: 2px solid blue; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 3em;
+    margin-right: 3em;
+    /* border: 2px solid blue; */
 }
 
 /* about link styling */
 .about_link a img {
-width: 10em;
+    width: 10em;
 }
 .purple_flower_hover_gif img {
-content:url("images/flower_purple_1.png");
+    content:url("images/flower_purple_1.png");
 }
 .purple_flower_hover_gif:hover img {
-content: url("images/flower_purple.gif");
+    content: url("images/flower_purple.gif");
 }
 
 /* portfolio link styling */
 .portfolio_link a img {
-width: 10em;
+    width: 10em;
 }
 .orange_flower_hover_gif img {
-content:url("images/flower_orange_1.png");
+    content:url("images/flower_orange_1.png");
 }
 .orange_flower_hover_gif:hover img {
-content: url("images/flower_orange.gif");
+    content: url("images/flower_orange.gif");
 }
 
 /* goals link styling */
 .goals_link a img {
-width: 10em;
+    width: 10em;
 }
 .blue_flower_hover_gif img {
-content:url("images/flower_blue_1.png");
+    content:url("images/flower_blue_1.png");
 }
 .blue_flower_hover_gif:hover img {
-content: url("images/flower_blue.gif");
+    content: url("images/flower_blue.gif");
 }
 
 /* mystery link styling */
 .mystery_link a img {
-width: 10em;
+    width: 10em;
 }
 .red_flower_hover_gif img {
-content:url("images/flower_red_1.png");
+    content:url("images/flower_red_1.png");
 }
 .red_flower_hover_gif:hover img {
-content: url("images/flower_red.gif");
+    content: url("images/flower_red.gif");
 }
 
 /*********************************/
@@ -160,10 +160,10 @@ content: url("images/flower_red.gif");
     cursor: pointer;
 }
 .white_flower_hover_gif img {
-content:url("images/flower_white_1.png");
+    content:url("images/flower_white_1.png");
 }
 .white_flower_hover_gif:hover img {
-content: url("images/flower_white.gif");
+    content: url("images/flower_white.gif");
 }
 
 
@@ -172,28 +172,28 @@ content: url("images/flower_white.gif");
 /*********************************/
 
 .intro_with_image {
-display: flex;
-flex-direction: row;
-align-items: center;
-justify-content: center;
-padding-top: 2em;
-padding-left: 7em;
-padding-right: 7em;
-padding-bottom: 2em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2em;
+    padding-left: 7em;
+    padding-right: 7em;
+    padding-bottom: 2em;
 }
 
 .img_of_me_wrapper {
-flex: 0 0 40%;             
-display: flex;
-justify-content: center;   
-align-items: center;       
+    flex: 0 0 40%;             
+    display: flex;
+    justify-content: center;   
+    align-items: center;       
 }
 
 .img_of_me {
-  max-width: 100%;           
-  height: 32em;
-  display: block;
-  border-radius: 10%;
+    max-width: 100%;           
+    height: 32em;
+    display: block;
+    border-radius: 10%;
 }
 
 .intro_text_wrapper {
@@ -359,6 +359,10 @@ align-items: center;
     text-align: center;
 }
 
+.mobile_only {
+    display: none;
+}
+
 .skills_text_wrapper p {
     position: absolute;
     top: 0;
@@ -370,74 +374,41 @@ align-items: center;
 }
 
 /* pair each icon with its text via :has() */
-.skills_container:has(.sql_skills_icon:hover) .sql_skills_text { opacity: 1; }
-.skills_container:has(.python_skills_icon:hover) .python_skills_text { opacity: 1; }
-.skills_container:has(.excel_skills_icon:hover) .excel_skills_text { opacity: 1; }
-.skills_container:has(.r_skills_icon:hover) .r_skills_text { opacity: 1; }
-.skills_container:has(.source_control_skills_icon:hover) .source_control_skills_text { opacity: 1; }
-.skills_container:has(.java_skills_icon:hover) .java_skills_text { opacity: 1; }
-.skills_container:has(.cplus_skills_icon:hover) .cplus_skills_text { opacity: 1; }
-.skills_container:has(.github_skills_icon:hover) .github_skills_text { opacity: 1; }
-.skills_container:has(.snowflake_skills_icon:hover) .snowflake_skills_text { opacity: 1; }
-.skills_container:has(.data_analysis_skills_icon:hover) .data_analysis_skills_text { opacity: 1; }
-.skills_container:has(.webdev_skills_icon:hover) .webdev_skills_text { opacity: 1; }
-.skills_container:has(.db_skills_icon:hover) .db_skills_text { opacity: 1; }
+@media (min-width: 769px) {
+    .skills_container:has(.sql_skills_icon:hover) .sql_skills_text { opacity: 1; }
+    .skills_container:has(.python_skills_icon:hover) .python_skills_text { opacity: 1; }
+    .skills_container:has(.excel_skills_icon:hover) .excel_skills_text { opacity: 1; }
+    .skills_container:has(.r_skills_icon:hover) .r_skills_text { opacity: 1; }
+    .skills_container:has(.source_control_skills_icon:hover) .source_control_skills_text { opacity: 1; }
+    .skills_container:has(.java_skills_icon:hover) .java_skills_text { opacity: 1; }
+    .skills_container:has(.cplus_skills_icon:hover) .cplus_skills_text { opacity: 1; }
+    .skills_container:has(.github_skills_icon:hover) .github_skills_text { opacity: 1; }
+    .skills_container:has(.snowflake_skills_icon:hover) .snowflake_skills_text { opacity: 1; }
+    .skills_container:has(.data_analysis_skills_icon:hover) .data_analysis_skills_text { opacity: 1; }
+    .skills_container:has(.webdev_skills_icon:hover) .webdev_skills_text { opacity: 1; }
+    .skills_container:has(.db_skills_icon:hover) .db_skills_text { opacity: 1; }
 
-.sql_skills_icon:hover {
-    content:url("images/skill_icons/sql_color.png");
-    transform: scale(1.5);
-}
-.python_skills_icon:hover {
-    content:url("images/skill_icons/python_color.png");
-    transform: scale(1.5);
-}
-.excel_skills_icon:hover {
-    content:url("images/skill_icons/excel_color.png");
-    transform: scale(1.5);
-}
-.r_skills_icon:hover {
-    content:url("images/skill_icons/r_color.png");
-    transform: scale(1.5);
-}
-.source_control_skills_icon:hover {
-    content:url("images/skill_icons/source_control_color.png");
-    transform: scale(1.7);
-}
-.java_skills_icon:hover {
-    content:url("images/skill_icons/java_color.png");
-    transform: scale(1.5);
-}
-.cplus_skills_icon:hover {
-    content:url("images/skill_icons/c++_color.png");
-    transform: scale(1.5);
-}
-.github_skills_icon:hover {
-    content:url("images/skill_icons/github_color.png");
-    transform: scale(1.5);
-}
-.snowflake_skills_icon:hover {
-    content:url("images/skill_icons/snowflake_color.png");
-    transform: scale(1.5);
-}
-.data_analysis_skills_icon:hover {
-    content:url("images/skill_icons/data_analysis_color.png");
-    transform: scale(1.5);
-}
-.webdev_skills_icon:hover {
-    content:url("images/skill_icons/webdev_color.png");
-    transform: scale(1.5);
-}
-.db_skills_icon:hover {
-    content:url("images/skill_icons/db_color.png");
-    transform: scale(1.5);
+    .sql_skills_icon:hover { content:url("images/skill_icons/sql_color.png"); transform: scale(1.5); }
+    .python_skills_icon:hover { content:url("images/skill_icons/python_color.png"); transform: scale(1.5); }
+    .excel_skills_icon:hover { content:url("images/skill_icons/excel_color.png"); transform: scale(1.5); }
+    .r_skills_icon:hover { content:url("images/skill_icons/r_color.png"); transform: scale(1.5); }
+    .source_control_skills_icon:hover { content:url("images/skill_icons/source_control_color.png"); transform: scale(1.7); }
+    .java_skills_icon:hover { content:url("images/skill_icons/java_color.png"); transform: scale(1.5); }
+    .cplus_skills_icon:hover { content:url("images/skill_icons/c++_color.png"); transform: scale(1.5); }
+    .github_skills_icon:hover { content:url("images/skill_icons/github_color.png"); transform: scale(1.5); }
+    .snowflake_skills_icon:hover { content:url("images/skill_icons/snowflake_color.png"); transform: scale(1.5); }
+    .data_analysis_skills_icon:hover { content:url("images/skill_icons/data_analysis_color.png"); transform: scale(1.5); }
+    .webdev_skills_icon:hover { content:url("images/skill_icons/webdev_color.png"); transform: scale(1.5); }
+    .db_skills_icon:hover { content:url("images/skill_icons/db_color.png"); transform: scale(1.5); }
+
+    .skills_container:has(.skills_icons_row img:hover) .skills_text_wrapper .skills_placeholder_text {
+        opacity: 0;
+    }
 }
 
 .skills_text_wrapper .skills_placeholder_text {
     opacity: 1;
     color: gray;
-}
-.skills_container:has(.skills_icons_row img:hover) .skills_text_wrapper .skills_placeholder_text {
-    opacity: 0;
 }
 
 .main_projects_wrapper {
@@ -628,4 +599,209 @@ transform: scale(1.2);
 .underline:where(:hover, :focus-visible) {
     background-size: 100% var(--bg-h);
     background-position-x: left;
+}
+
+/*********************************/
+/**   RESPONSIVE / MOBILE       **/
+/*********************************/
+
+@media (max-width: 768px) {
+
+    /* ---- INDEX / NAV LINKS ---- */
+
+.links_wrapper {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2em 1em;
+}
+.links_wrapper a {
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+.about_link a img,
+.portfolio_link a img,
+.goals_link a img,
+.mystery_link a img {
+    width: 8em; /* this is how big the flower links are! */
+}
+
+/* auto-play gifs instead of hover rule for mobile */
+.purple_flower_hover_gif img {
+    content: url("images/flower_purple.gif");
+}
+.orange_flower_hover_gif img {
+    content: url("images/flower_orange.gif");
+}
+.blue_flower_hover_gif img {
+    content: url("images/flower_blue.gif");
+}
+.red_flower_hover_gif img {
+    content: url("images/flower_red.gif");
+}
+
+/* swap scrolling background image for mobile */
+.scene-tile {
+    content: url("images/phone_background_test.jpg");
+}
+
+    /* ---- ABOUT ME ---- */
+
+.intro_with_image {
+    flex-direction: column;
+    padding: 1.5em 1em;
+}
+.img_of_me_wrapper {
+    flex: none;
+    width: 100%;
+}
+.img_of_me {
+    height: auto;
+    width: 60%;
+    max-width: 250px;
+}
+.intro_text_column {
+    flex: none;
+    width: 85%;
+}
+.intro_text_wrapper {
+    font-size: 1.1em;
+    padding: 0.5em 0.5em;
+}
+
+    /* ---- PORTFOLIO ---- */
+
+.professional_intro,
+.main_projects_wrapper {
+    margin-left: 1em;
+    margin-right: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+.professional_text_intro,
+.projects_intro {
+    font-size: 1.1em;
+    padding: 0.5em;
+}
+.skills_container {
+    font-size: 1em;
+    padding: 1.5em 0.5em 0.5em;
+}
+
+.desktop_only {
+    display: none;
+}
+.mobile_only {
+    display: block;
+}
+
+/* CHANGE SKILLS FROM HOVER TO CLICK FOR MORE INFO */
+.skills_container:has(.sql_skills_icon:focus) .sql_skills_text { opacity: 1; }
+.skills_container:has(.python_skills_icon:focus) .python_skills_text { opacity: 1; }
+.skills_container:has(.excel_skills_icon:focus) .excel_skills_text { opacity: 1; }
+.skills_container:has(.r_skills_icon:focus) .r_skills_text { opacity: 1; }
+.skills_container:has(.source_control_skills_icon:focus) .source_control_skills_text { opacity: 1; }
+.skills_container:has(.java_skills_icon:focus) .java_skills_text { opacity: 1; }
+.skills_container:has(.cplus_skills_icon:focus) .cplus_skills_text { opacity: 1; }
+.skills_container:has(.github_skills_icon:focus) .github_skills_text { opacity: 1; }
+.skills_container:has(.snowflake_skills_icon:focus) .snowflake_skills_text { opacity: 1; }
+.skills_container:has(.data_analysis_skills_icon:focus) .data_analysis_skills_text { opacity: 1; }
+.skills_container:has(.webdev_skills_icon:focus) .webdev_skills_text { opacity: 1; }
+.skills_container:has(.db_skills_icon:focus) .db_skills_text { opacity: 1; }
+
+.sql_skills_icon:focus {
+    content:url("images/skill_icons/sql_color.png");
+    transform: scale(1.5);
+}
+.python_skills_icon:focus {
+    content:url("images/skill_icons/python_color.png");
+    transform: scale(1.5);
+}
+.excel_skills_icon:focus {
+    content:url("images/skill_icons/excel_color.png");
+    transform: scale(1.5);
+}
+.r_skills_icon:focus {
+    content:url("images/skill_icons/r_color.png");
+    transform: scale(1.5);
+}
+.source_control_skills_icon:focus {
+    content:url("images/skill_icons/source_control_color.png");
+    transform: scale(1.5);
+}
+.java_skills_icon:focus {
+    content:url("images/skill_icons/java_color.png");
+    transform: scale(1.5);
+}
+.cplus_skills_icon:focus {
+    content:url("images/skill_icons/c++_color.png");
+    transform: scale(1.5);
+}
+.github_skills_icon:focus {
+    content:url("images/skill_icons/github_color.png");
+    transform: scale(1.5);
+}
+.snowflake_skills_icon:focus {
+    content:url("images/skill_icons/snowflake_color.png");
+    transform: scale(1.5);
+}
+.data_analysis_skills_icon:focus {
+    content:url("images/skill_icons/data_analysis_color.png");
+    transform: scale(1.5);
+}
+.webdev_skills_icon:focus {
+    content:url("images/skill_icons/webdev_color.png");
+    transform: scale(1.5);
+}
+.db_skills_icon:focus {
+    content:url("images/skill_icons/db_color.png");
+    transform: scale(1.5);
+}
+
+.skills_container:has(.skills_icons_row img:focus) .skills_text_wrapper .skills_placeholder_text {
+    opacity: 0;
+}
+
+.skills_icons_row {
+    gap: 0.6em;
+}
+.project_card {
+    padding: 1em;
+}
+.project_card_header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.2em;
+}
+.project_title {
+    font-size: 1.2em;
+}
+
+/* ---- FOOTER ---- */
+
+footer {
+    margin-left: 2em;
+    margin-right: 2em;
+}
+footer ul {
+    justify-content: center;
+    width: 80%;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+footer ul li {
+    width: auto;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+    /* ---- GOALS ---- */
+
+.temporary_cover p {
+    width: 80%;
+}
+
 }
