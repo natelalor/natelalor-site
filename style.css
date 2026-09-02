@@ -741,51 +741,39 @@ transform: scale(1.2);
 .skills_container:has(.db_skills_icon:focus) .db_skills_text { opacity: 1; }
 
 .sql_skills_icon:focus {
-    content:url("images/skill_icons/sql_color.png");
     transform: scale(1.5);
 }
 .python_skills_icon:focus {
-    content:url("images/skill_icons/python_color.png");
     transform: scale(1.5);
 }
 .excel_skills_icon:focus {
-    content:url("images/skill_icons/excel_color.png");
     transform: scale(1.5);
 }
 .r_skills_icon:focus {
-    content:url("images/skill_icons/r_color.png");
     transform: scale(1.5);
 }
 .source_control_skills_icon:focus {
-    content:url("images/skill_icons/source_control_color.png");
     transform: scale(1.5);
 }
 .java_skills_icon:focus {
-    content:url("images/skill_icons/java_color.png");
     transform: scale(1.5);
 }
 .cplus_skills_icon:focus {
-    content:url("images/skill_icons/c++_color.png");
     transform: scale(1.5);
 }
 .github_skills_icon:focus {
-    content:url("images/skill_icons/github_color.png");
     transform: scale(1.5);
 }
 .snowflake_skills_icon:focus {
-    content:url("images/skill_icons/snowflake_color.png");
     transform: scale(1.5);
 }
 .data_analysis_skills_icon:focus {
-    content:url("images/skill_icons/data_analysis_color.png");
     transform: scale(1.5);
 }
 .webdev_skills_icon:focus {
-    content:url("images/skill_icons/webdev_color.png");
     transform: scale(1.5);
 }
 .db_skills_icon:focus {
-    content:url("images/skill_icons/db_color.png");
     transform: scale(1.5);
 }
 
