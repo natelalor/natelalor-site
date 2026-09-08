@@ -1,10 +1,12 @@
 * {
     margin: 0;
     padding: 0;
+    scrollbar-color: #888 transparent; 
 }
 :root {
     font-family: 'Roboto', sans-serif;
     font-size:medium;
+    overscroll-behavior: none;
 }
 
 body {
@@ -234,40 +236,86 @@ a:visited{
     background-position: center;
 }
 
-.social_media_h1 {
-    padding: 1em;
-    margin-top: 0.5em;
-    font-size: 2em;
-    font-weight: bold;
-    align-self: center;
-}
-
-.connect_with_me_wrapper{
+.entire_connect_with_me_section_wrapper {
+    position: relative;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
 }
 
-.connect_with_me_wrapper a {
-    padding: 2em;
+.connect_background_img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.social_media_h1 {
+    padding: 1em;
+    margin-top: 2em; /* make this lower in mobile view */
+    font-size: 3em;
+    font-weight: bolder;
+    color: white;
+    z-index: 1;
+}
+
+/* CONNECTION LINKS CONTENT */
+
+.connection_clouds_wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 90%;
+    margin-bottom: 12em; /*this is to show the flowers at the bottom */
+}
+.connection_clouds_wrapper div {
+    flex: 1;
+    min-width: 0;
+    min-height: 3em;
+}
+
+.cloud_container {
+    width: 14em;
+    position: relative;
     transition: all 200ms ease;
-    width: 8em;
 }
 
-.connect_with_me_wrapper a:hover {
-    transform: scale(1.2);
-}
-
-.footer_flowers_wrapper {
-    line-height: 0;
-    max-width: 100%;
-}
-
-.footer_flowers_img {
-    max-width: 100%;
+.blank_cloud_img {
+    width: 100%;
     display: block;
+    transition: transform 200ms ease, opacity 200ms ease;
+    opacity: 1;
 }
+.cloud_img_with_content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: transform 200ms ease, opacity 200ms ease;
+}
+
+/* crossfade images */
+.cloud_container:hover .blank_cloud_img {
+    opacity: 0;
+    transform: scale(1.3);
+}
+.cloud_container:hover .cloud_img_with_content {
+    opacity: 1;
+    transform: scale(1.3);
+}
+
+/* 
+TO DO
+
+- then make it mobile-compatible, adjust the cloud width and make them just straight links instead of hover affects to show text
+
+*/
+
 
 /**********************************/
 /**       PORTFOLIO STYLING      **/
@@ -690,6 +738,25 @@ transform: scale(1.2);
     transition: all 50ms ease;
     width: 3.5em;
 }
+.cloud_container {
+    width: 6em;
+    position: relative;
+    transition: all 200ms ease;
+}
+.blank_cloud_img {
+    width: 100%;
+    display: block;
+    opacity: 0;
+}
+.cloud_img_with_content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+}
+
 
     /* ---- PORTFOLIO ---- */
 
