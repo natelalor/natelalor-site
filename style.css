@@ -739,7 +739,7 @@ transform: scale(1.2);
     width: 3.5em;
 }
 .cloud_container {
-    width: 6em;
+    width: 5em;
     position: relative;
     transition: all 200ms ease;
 }
