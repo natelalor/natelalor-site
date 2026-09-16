@@ -7,6 +7,18 @@
     font-family: 'Roboto', sans-serif;
     font-size:medium;
     overscroll-behavior: none;
+
+    /* some colors :) */
+    --bg: #fbf7f1;
+    --card: #ffffff;
+    --ink: #262019;
+    --ink-soft: #7a7268;
+    --line: rgba(38, 32, 25, 0.09);
+    --accent: #e8a93d;
+    --accent-soft: rgba(232, 169, 61, 0.16);
+    --creativity: #b15e7c;
+    --athletic: #2e8b74;
+    --technical: #4457b0;
 }
 
 body {
@@ -587,20 +599,156 @@ TO DO
 /******************************/
 /**       GOALS STYLING      **/
 /******************************/
-.temporary_cover {
+
+.goals_body {
+    background-color: rgb(243, 232, 117, 0.3);
+}
+
+.goals_intro {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    height: 100vh;          
-    font-size: 1.5em;
-    font-weight: bold;
-    text-align: center;     
+    margin-top: 2em;
+    margin-right: 15em;
+    margin-left: 15em;
+    background-color: white;
+    border-radius: 1.125em;
+    border: 1px solid var(--line);
+    padding: 1em;
 }
-.temporary_cover_img {
+
+.goals_title {
+    font-size: 3em;
+    font-weight: bolder;
+}
+
+.goals_intro p {
+    font-size: 1.3em;
+    padding: 1em;
+}
+
+.widget {
+    max-width: 60em;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2em;
+}
+
+.widget header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0.5em;
+    margin-bottom: 1.125em;
+}
+
+.goals_h1 {
+    font-size: 1.375em;
+    font-weight: 700;
+}
+
+.tally {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 1.5em;
+    color: var(--accent);
+    line-height: 1;
+}
+
+.card {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 1.125em;
+    padding: 1.25em 1.125em 0.5em;
+    position: relative;
+    height: 17.5em;
+}
+
+.card canvas {
     max-width: 100%;
-    width: 10em;
-    padding-bottom: 1em;
+    max-height: 100%;
+}
+
+.master-list {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 1.125em;
+    padding: 1.75em 1.5em;
+    margin-top: 1.25em;
+}
+
+.list-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2em;
+}
+
+.list-section:last-child {
+    padding-left: 2em;
+    border-left: 1px solid var(--line);
+}
+
+.list-heading {
+    font-size: 1.375em;
+    font-weight: 700;
+    color: var(--ink);
+    margin: 0 0 0.875em;
+}
+
+.goal-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.625em;
+}
+
+.goal-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-size: 0.875em;
+    padding-bottom: 0.625em;
+    border-bottom: 1px solid var(--line);
+}
+
+.goal-list li:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.goal-name { color: var(--ink); }
+
+.goal-date {
+    color: var(--ink-soft);
+    font-size: 0.85em;
+    white-space: nowrap;
+    margin-left: 1em;
+}
+
+.goal-list.plain .goal-name { color: var(--ink-soft); }
+
+.master-list {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 1.125em;
+    padding: 1.75em 1.5em 0.5em;
+    margin-top: 1.25em;
+}
+
+.list-section {
+    margin-bottom: 2em;
+}
+
+.list-section:last-child {
+    margin-bottom: 0.5em;
+}
+
+.list-heading {
+    font-size: 1.375em;
+    font-weight: 700;
+    color: var(--ink);
+    margin: 0 0 0.875em;
 }
 
 /************/
@@ -863,6 +1011,27 @@ transform: scale(1.2);
     font-size: 1.2em;
 }
 
+/* ---- GOALS ---- */
+
+.grid { grid-template-columns: 1fr; }
+  .goals_h1 {
+    margin-left: 2em;
+  }
+
+.list-columns {
+    grid-template-columns: 1fr;
+    gap: 1.5em;
+}
+
+.list-section:last-child {
+    padding-left: 0;
+    border-left: none;
+    border-top: 1px solid var(--line);
+    padding-top: 1.5em;
+}
+
+
+
 /* ---- FOOTER ---- */
 
 footer {
@@ -880,11 +1049,4 @@ footer ul li {
     padding-left: 1em;
     padding-right: 1em;
 }
-
-    /* ---- GOALS ---- */
-
-.temporary_cover p {
-    width: 80%;
-}
-
 }
