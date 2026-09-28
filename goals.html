@@ -13,7 +13,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Square+Peg&display=swap" rel="stylesheet">  
     </head>
 
-    <body>
+    <body class="goals_body">
         <div class="nav">
             <input type="checkbox" id="nav-toggle" class="nav_toggle">
             <label for="nav-toggle" class="nav_white_flower_gif">
@@ -35,16 +35,62 @@
             </a>
         </div>
 
-        <div class="temporary_cover">
-            <img src="images/goals_cover.gif" alt="Temporary cover image" class="temporary_cover_img">
-            <p>My goals page is still under development. Check back soon!</p>
+        <div class="goals_intro">
+            <div class="goals_text_container">
+                <h1 class="goals_title">Goals</h1>
+                <p>
+                    I am always moving - constantly looking for the next exciting activity, new skill to learn, new card game to play, next opportunity to learn and grow. This is where I document what I've accomplished and what I have yet to do.
+                </p>
+            </div>
+            <div class="box slider-container">
+                <!-- Photo List wrapper -->
+                <div class="slider-track">
+                    <img src="images/goals_photos/ceramic_bowl.png" alt="" class="slide">
+                    <img src="images/goals_photos/sourdough.png" alt="" class="slide">
+                    <img src="images/goals_photos/me_running.png" alt="" class="slide">
+                    <img src="images/goals_photos/garden_small.png" alt="" class="slide">
+                    <img src="images/goals_photos/garden_big.png" alt="" class="slide">
+                    <img src="images/goals_photos/ceramics_collection.jpg" alt="" class="slide">
+                    <img src="images/goals_photos/celtics.png" alt="" class="slide">
+                </div>
+                <!-- Bottom Control Bar -->
+                <div class="controls-container">
+                    <button class="nav-btn" onclick="changeSlide(-1)">&#10094;</button>
+                    <!-- Dots wrapper (generated dynamically by JS) -->
+                    <div id="dots-container" class="dots-container"></div>
+                    <button class="nav-btn" onclick="changeSlide(1)">&#10095;</button>
+                </div>
+                </div>
+        </div>
+        <div class="widget">
+            <header>
+                <h1 class="goals_h1">Goal Progress</h1>
+                <div class="tally" id="tally"></div>
+            </header>
+
+            <div class="card">
+                <canvas id="chart"></canvas>
+            </div>
+
+            <div class="master-list">
+                <div class="list-columns">
+                    <section class="list-section">
+                    <h2 class="list-heading">Completed</h2>
+                    <ul class="goal-list" id="completedList"></ul>
+                    </section>
+
+                    <section class="list-section">
+                    <h2 class="list-heading">Working On It</h2>
+                    <ul class="goal-list plain" id="notDoneList"></ul>
+                    </section>
+                </div>
+            </div>
         </div>
 
-        <!-- SNEAK PEAK OF MY PLANS!!! -->
-        <!-- showcase my current goals -->
-        <!-- showcase my completed goals -->
-        <!-- this gives insight into activities, hobbies, goals of mine beyond coding... like baking sourdough, writing medium articles, reading, cooking, gardening, running, etc. -->
-        <!-- check back for more! :)-->
+        <script src="photos_scroller.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns@3/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
+        <script src="goals_graph.js"></script>
     </body>
 </html>
 
