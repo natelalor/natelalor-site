@@ -36,10 +36,30 @@
         </div>
 
         <div class="goals_intro">
-            <h1 class="goals_title">Goals</h1>
-            <p>
-                I am always moving. Constantly looking for the next exciting activity, new skill to learn, new card game to play, next opportunity to learn and grow. This is where I document what I've accomplished and what I have yet to do.
-            </p>
+            <div class="goals_text_container">
+                <h1 class="goals_title">Goals</h1>
+                <p>
+                    I am always moving. Constantly looking for the next exciting activity, new skill to learn, new card game to play, next opportunity to learn and grow. This is where I document what I've accomplished and what I have yet to do.
+                </p>
+            </div>
+            <div class="box slider-container">
+                <!-- Photo List wrapper -->
+                <div class="slider-track">
+                    <img src="images/temporary_photo.png" alt="Photo 1" class="slide active">
+                    <img src="images/temporary_photo.png" alt="Photo 2" class="slide">
+                    <img src="images/temporary_photo.png" alt="Photo 3" class="slide">
+                </div>
+
+                <!-- Bottom Control Bar -->
+                <div class="controls-container">
+                    <button class="nav-btn" onclick="changeSlide(-1)">&#10094;</button>
+                    
+                    <!-- Dots wrapper (generated dynamically by JS) -->
+                    <div id="dots-container" class="dots-container"></div>
+                    
+                    <button class="nav-btn" onclick="changeSlide(1)">&#10095;</button>
+                </div>
+                </div>
         </div>
         <div class="widget">
             <header>
@@ -66,54 +86,10 @@
             </div>
         </div>
 
+        <script src="photos_scroller.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
         <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns@3/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
         <script src="goals_graph.js"></script>
-
-
-
-
-
-
-
-
-
-
-        <!-- <div class="main_goals_wrapper">
-            <p>My brain is always asking me: What's next? Why not more? I push myself so hard and sometimes I forget to recognize all I've done.</p>
-            <br>
-            <p>Here is a place to document what I've already achieved, and also stay on target to achieve more going forward.</p>
-            <br>
-            <p>I used to think wanting to do everything was a bad idea.</p>
-            <p>Let's see how far I can get!</p>
-            <br>
-            <p>athletics</p>
-            <ul>
-                <li><s>run 5 miles</s></li>
-                <li><s>run 10 miles</s></li>
-                <li>run a half marathon</li>
-                <li>run a full marathon</li>
-                <li><s>bench 105</s></li>
-                <li>bench 135</li>
-                <li>test & track vertical</li>
-            </ul>
-            <br>
-            <p>creativity</p>
-            <ul>
-                <li>write + publish article on medium</li>
-                <li>create + publish 1 song on spotify</li>
-                <li>create instagram account + post 2x week</li>
-
-            </ul>
-            <br>
-            <p>tech</p>
-            <ul>
-                <li><s>Google data certification</s></li>
-                <li><s>design & deploy website</s></li>
-                <li>polished edtech data project</li>
-                <li>polished agriculture data project</li>
-            </ul>
-        </div> -->
     </body>
 </html>
 

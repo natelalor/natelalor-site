@@ -606,18 +606,124 @@ TO DO
 
 .goals_intro {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    /* justify-content: space-evenly; */
     margin-top: 2em;
     margin-right: 15em;
     margin-left: 15em;
     background-color: white;
-    border-radius: 1.125em;
+    border-radius: 1.2em;
     border: 1px solid var(--line);
     padding: 1em;
 }
+.goals_text_container {
+    width: 50%;
+}
+.goals_photos_container {
+    width: 50%;
+    border: 2px solid blue;
+    /* height: 800px;  */
+}
+.goals_photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    object-position: center; 
+}
+
+/* Container stays locked at 250px using flexbox */
+.slider-container {
+  display: flex;
+  flex-direction: column;
+  height: 250px;
+  overflow: hidden;
+  padding: 0;
+  background: transparent; /* Seamless blend with whatever background your box has */
+}
+
+/* Image track takes up the max possible space (210px) */
+.slider-track {
+  width: 100%;
+  height: 210px; /* Locked height so images remain large and visible */
+  position: relative;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Keeps image looking full and undistorted */
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+  z-index: 1;
+}
+
+.slide.active {
+  opacity: 1;
+  z-index: 2;
+}
+
+/* The Control Bar at the bottom */
+.controls-container {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  /* FIX: Significantly wider spacing between arrows and dots */
+  gap: 35px; 
+  
+  z-index: 10;
+  background: transparent; /* Removed the background tint completely */
+  padding: 0;
+}
+
+/* Your original dark, sleek button styling restored */
+.nav-btn {
+  background: none;
+  border: none;
+  color: #333; /* Original dark text color */
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 14px; 
+  font-weight: bold;
+  transition: transform 0.2s, color 0.2s;
+}
+
+.nav-btn:hover {
+  color: #000;
+  transform: scale(1.2);
+}
+
+/* Dots Grouping */
+.dots-container {
+  display: flex;
+  
+  /* FIX: More spacing between individual dots so they aren't cramped */
+  gap: 12px; 
+}
+
+/* Original dark dots styling restored */
+.dot {
+  width: 8px;
+  height: 8px;
+  background-color: #bbb; /* Original light gray */
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dot.active {
+  background-color: #333; /* Original dark gray for active image */
+}
+
 
 .goals_title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 3em;
     font-weight: bolder;
 }
