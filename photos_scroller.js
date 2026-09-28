@@ -51,3 +51,6 @@ function updateDOM(newIndex) {
 
 // Initialize the dots when the script loads
 createDots();
+
+// Set the first slide to active on page load
+slides[0].classList.add('active');
