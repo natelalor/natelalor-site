@@ -11,5 +11,5 @@ Lastly, I also try to get out and do a ton of different things. Producing music,
 
 I hope you enjoyed your journey through natelalor.com!
 
-_Project Timeline: August 2026_
+_Project Timeline: August 2026 - September 2026_
 
