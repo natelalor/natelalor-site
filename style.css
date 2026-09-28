@@ -44,7 +44,7 @@ a:visited{
     display: flex;
     width: 200%;
     height: 100%;
-    animation: scroll-bg 40s linear infinite;
+    animation: scroll-bg 90s linear infinite;
 }
 .scene-tile {
     width: 50%;
@@ -55,7 +55,7 @@ a:visited{
 }
 @keyframes scroll-bg {
     from { transform: translateX(0); }
-    to   { transform: translateX(-50%); }
+    to   { transform: translateX(-500vw); }
 }
 
 /* flower spacing & size */
